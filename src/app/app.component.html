@@ -1,2 +1,8 @@
 <app-navbar></app-navbar>
 <router-outlet></router-outlet>
+  <!-- Botón para instalar la PWA -->
+  <div *ngIf="showInstallPrompt" class="install-container">
+    <button (click)="installPWA()" expand="full" color="primary">
+      Instalar Aplicación
+    </button>
+  </div>
